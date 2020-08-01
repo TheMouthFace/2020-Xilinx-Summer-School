@@ -18,8 +18,8 @@ char buffer[bufferLen];
 char buffer1[bufferLen];
 AWS_IOT hornbill;
 
-char WIFI_SSID[]="5004小猪";
-char WIFI_PASSWORD[]="12345678q";
+char WIFI_SSID[]="502";
+char WIFI_PASSWORD[]="00000000";
 char HOST_ADDRESS[]="a2uo9ix2irhly4-ats.iot.us-east-1.amazonaws.com";
 char CLIENT_ID[]= "MQTT_FX_Client";
 char TOPIC_NAME[]= "$aws/things/tomatoes/shadow/update";
@@ -43,7 +43,7 @@ int16_t read_data(){
     int16_t *x;
     SeaTrans.read(2,data_x,2);
     x = (int16_t*)data_x;
-   // Serial.println(*x);
+    Serial.println(*x);
     return *x;
 }
 
@@ -187,4 +187,5 @@ void loop()
         {
             Serial.println("Publish failed!");
         }
+    Serial.println("------------------------------------");
 }

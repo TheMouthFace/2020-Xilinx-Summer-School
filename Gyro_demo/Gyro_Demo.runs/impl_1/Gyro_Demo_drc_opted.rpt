@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jul 31 13:39:15 2020
+| Date         : Sat Aug  1 09:50:35 2020
 | Host         : LAPTOP-LM0N8TNB running 64-bit major release  (build 9200)
 | Command      : report_drc -file Gyro_Demo_drc_opted.rpt -pb Gyro_Demo_drc_opted.pb -rpx Gyro_Demo_drc_opted.rpx
 | Design       : Gyro_Demo

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jul 31 13:39:18 2020
+| Date         : Sat Aug  1 09:50:38 2020
 | Host         : LAPTOP-LM0N8TNB running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Gyro_Demo_control_sets_placed.rpt
 | Design       : Gyro_Demo
@@ -64,49 +64,49 @@ Table of Contents
 +----------------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
 |           Clock Signal           |                  Enable Signal                 |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
 +----------------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[0]_i_1_n_0           |                                             |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[2]_i_1_n_0           |                                             |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/SDA_Out_i_1_n_0                    | Driver_Gyro0/Enable_reg_0                   |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[5]_i_1_n_0           |                                             |                1 |              1 |
 | ~I_qspi_clk_IBUF_BUFG            |                                                | I_qspi_cs_IBUF                              |                1 |              1 |
 |  Driver_Gyro0/Enable_reg_i_1_n_0 |                                                |                                             |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[1]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[2]_i_1_n_0           |                                             |                1 |              1 |
 |  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[3]_i_1_n_0           |                                             |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[6]_i_1_n_0           |                                             |                1 |              1 |
-|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[7]_i_1_n_0           |                                             |                1 |              1 |
 |  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[4]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[1]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[6]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[5]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[0]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/IIC_Read_Data[7]_i_1_n_0           |                                             |                1 |              1 |
+|  clk_10/inst/clk_out1            | Driver_IIC0/SDA_Out_i_1_n_0                    | Driver_Gyro0/Enable_reg_0                   |                1 |              1 |
 |  Driver_Gyro0/Clk_Division0/Clk  |                                                |                                             |                1 |              1 |
 |  Driver_Gyro0/Clk_Division1/CLK  |                                                |                                             |                1 |              1 |
-|  clk_10/inst/clk_out2            |                                                |                                             |                1 |              2 |
 |  clk_10/inst/clk_out1            |                                                |                                             |                2 |              2 |
+|  clk_10/inst/clk_out2            |                                                |                                             |                1 |              2 |
+|  clk_10/inst/clk_out1            |                                                | u_Gyro2ram/addr[3]_i_2_n_0                  |                2 |              4 |
 |  I_qspi_clk_IBUF_BUFG            | u_qspi_slave/R_o_data[7]_i_1_n_0               | I_qspi_cs_IBUF                              |                1 |              4 |
 |  I_qspi_clk_IBUF_BUFG            | u_qspi_slave/addr0                             | I_qspi_cs_IBUF                              |                2 |              4 |
 |  Driver_Gyro0/Clk_Division0/Clk  | Driver_Gyro0/Req_R_Cnt_0                       |                                             |                1 |              4 |
 |  Driver_Gyro0/Clk_Division1/CLK  | Driver_Gyro0/Req_W_Cnt_1                       |                                             |                1 |              4 |
-|  clk_10/inst/clk_out1            |                                                | u_Gyro2ram/addr[3]_i_2_n_0                  |                2 |              4 |
 | ~IIC_Busy_BUFG                   |                                                |                                             |                3 |              6 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/FSM_onehot_Mag_State[5]_i_1_n_0   |                                             |                2 |              6 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Reg_Addr[6]_i_2_n_0               | Driver_Gyro0/Reg_Addr[6]_i_1_n_0            |                2 |              6 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_State                        |                                             |                1 |              6 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Y_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Y_FIFO[7]_i_1_n_0        |                                             |                3 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Z_FIFO[7]_i_1_n_0        |                                             |                2 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Y_FIFO[15]_i_1_n_0      |                                             |                1 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Reg_Addr[6]_i_2_n_0               | Driver_Gyro0/Reg_Addr[6]_i_1_n_0            |                2 |              6 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Y_FIFO[15]_i_1_n_0       |                                             |                2 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Z_FIFO[15]_i_1_n_0       |                                             |                1 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Z_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_X_FIFO[15]_i_1_n_0      |                                             |                1 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_X_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Z_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Y_FIFO[15]_i_1_n_0      |                                             |                1 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_Y_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_X_FIFO[15]_i_1_n_0       |                                             |                1 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_X_FIFO[7]_i_1_n_0        |                                             |                1 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Y_FIFO[15]_i_1_n_0       |                                             |                2 |              8 |
-| ~IIC_Busy_BUFG                   | Driver_Gyro0/Temp_Data_FIFO[7]_i_1_n_0         |                                             |                1 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/Temp_Data_FIFO[15]_i_1_n_0        |                                             |                2 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Y_FIFO[7]_i_1_n_0        |                                             |                3 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Temp_Data_FIFO[7]_i_1_n_0         |                                             |                1 |              8 |
 |  I_qspi_clk_IBUF_BUFG            | u_qspi_slave/R_o_addr                          | I_qspi_cs_IBUF                              |                2 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Mag_Data_Z_FIFO[7]_i_1_n_0        |                                             |                2 |              8 |
+| ~IIC_Busy_BUFG                   | Driver_Gyro0/Gyro_Data_X_FIFO[7]_i_1_n_0       |                                             |                1 |              8 |
 | ~IIC_Busy_BUFG                   | Driver_Gyro0/FSM_onehot_Init_State[10]_i_1_n_0 |                                             |                4 |             16 |
-|  I_qspi_clk_IBUF_BUFG            |                                                | I_qspi_cs_IBUF                              |                8 |             24 |
 |  clk_10/inst/clk_out1            |                                                | Driver_Gyro0/Enable_reg_0                   |               12 |             24 |
-|  clk_10/inst/clk_out1            |                                                | Driver_Gyro0/Clk_Division0/Count0           |                8 |             32 |
+|  I_qspi_clk_IBUF_BUFG            |                                                | I_qspi_cs_IBUF                              |                8 |             24 |
 |  clk_10/inst/clk_out1            |                                                | Driver_Gyro0/Clk_Division1/Count[0]_i_1_n_0 |                8 |             32 |
+|  clk_10/inst/clk_out1            |                                                | Driver_Gyro0/Clk_Division0/Count0           |                8 |             32 |
 |  clk_10/inst/clk_out1            | u_Gyro2ram/mem[0][7]_i_1_n_0                   | u_Gyro2ram/addr[3]_i_2_n_0                  |               24 |            104 |
 +----------------------------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
 
