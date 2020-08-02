@@ -43,7 +43,6 @@ int16_t read_data(){
     int16_t *x;
     SeaTrans.read(2,data_x,2);
     x = (int16_t*)data_x;
-    Serial.println(*x);
     return *x;
 }
 
